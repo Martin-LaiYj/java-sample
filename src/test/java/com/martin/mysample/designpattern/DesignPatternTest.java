@@ -1,14 +1,25 @@
 package com.martin.mysample.designpattern;
 
-import com.martin.mysample.designpattern.api.Component;
-import com.martin.mysample.designpattern.api.Decorator;
-import com.martin.mysample.designpattern.api.ProxySubject;
-import com.martin.mysample.designpattern.api.Target;
-import com.martin.mysample.designpattern.business.*;
-import com.martin.mysample.designpattern.factory.AbstractFactory;
-import com.martin.mysample.designpattern.factory.ConcreteAbstractFactoryA;
-import com.martin.mysample.designpattern.factory.ConcreteAbstractFactoryB;
-import com.martin.mysample.designpattern.business.*;
+import com.martin.mysample.pattern.structural.adapter.adapter.Adaptee;
+import com.martin.mysample.pattern.structural.adapter.adapter.Adapter;
+import com.martin.mysample.pattern.structural.adapter.target.Target;
+import com.martin.mysample.pattern.structural.decorator.component.Component;
+import com.martin.mysample.pattern.structural.decorator.component.ConcreteComponent;
+import com.martin.mysample.pattern.structural.decorator.decorator.ConcreteDecoratorA;
+import com.martin.mysample.pattern.structural.decorator.decorator.ConcreteDecoratorB;
+import com.martin.mysample.pattern.structural.decorator.decorator.Decorator;
+import com.martin.mysample.pattern.behavioral.observer.observer.ConcreteObserver;
+import com.martin.mysample.pattern.behavioral.observer.observer.Observer;
+import com.martin.mysample.pattern.behavioral.observer.subject.ConcreteSubject;
+import com.martin.mysample.pattern.structural.proxy.subject.Subject;
+import com.martin.mysample.pattern.creational.factory.factory.AbstractFactory;
+import com.martin.mysample.pattern.creational.factory.factory.ConcreteAbstractFactoryA;
+import com.martin.mysample.pattern.creational.factory.factory.ConcreteAbstractFactoryB;
+import com.martin.mysample.pattern.structural.proxy.proxy.Proxy;
+import com.martin.mysample.pattern.creational.singleton.EnumSingle;
+import com.martin.mysample.pattern.creational.singleton.HungrySingle;
+import com.martin.mysample.pattern.creational.singleton.LazySingle;
+import com.martin.mysample.pattern.creational.singleton.Singleton;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -129,13 +140,13 @@ public class DesignPatternTest {
 
     @Test
     public void testProxy() {
-        ProxySubject proxy = new Proxy("测试信息");
+        Subject proxy = new Proxy("测试信息");
         proxy.request();
     }
 
     @Test
     public void testObserver() {
-        ConcreteObserverSubject subject = new ConcreteObserverSubject();
+        ConcreteSubject subject = new ConcreteSubject();
         Observer observer1 = new ConcreteObserver(subject, "Observer1");
         Observer observer2 = new ConcreteObserver(subject, "Observer2");
         subject.attach(observer1);

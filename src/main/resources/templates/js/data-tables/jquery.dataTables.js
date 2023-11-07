@@ -4833,7 +4833,7 @@
 		/**
 		 * Fire callback functions and trigger events. Note that the loop over the callback
 		 * array store is done backwards! Further note that you do not want to fire off triggers
-		 * in time sensitive applications (for example cell creation) as its slow.
+		 * in time sensitive applications (for example cell creationalpattern) as its slow.
 		 *  @param {object} oSettings dataTables settings object
 		 *  @param {string} sStore Name of the array storage for the callbacks in oSettings
 		 *  @param {string} sTrigger Name of the jQuery custom event to trigger. If null no trigger
@@ -8067,7 +8067,7 @@
 		/**
 		 * Deferred rendering can provide DataTables with a huge speed boost when you
 		 * are using an Ajax or JS data source for the table. This option, when set to
-		 * true, will cause DataTables to defer the creation of the table elements for
+		 * true, will cause DataTables to defer the creationalpattern of the table elements for
 		 * each row until they are needed for a draw - saving a significant amount of
 		 * time.
 		 *  @type boolean
@@ -10573,7 +10573,7 @@
 			"bAutoWidth": null,
 	
 			/**
-			 * Delay the creation of TR and TD elements until they are actually
+			 * Delay the creationalpattern of TR and TD elements until they are actually
 			 * needed by a driven page draw. This can give a significant speed
 			 * increase for Ajax source and Javascript source data, but makes no
 			 * difference at all fro DOM and server-side processing tables.
@@ -11089,7 +11089,7 @@
 		"sCookiePrefix": "",
 		
 		/**
-		 * Callback function for cookie creation.
+		 * Callback function for cookie creationalpattern.
 		 * Note that this parameter will be set by the initialisation routine. To
 		 * set a default use {@link DataTable.defaults}.
 		 *  @type function

@@ -1,8 +1,8 @@
 package com.martin.mysample.designpattern;
 
-import com.martin.mysample.designpattern.api.ProxySubject;
-import com.martin.mysample.designpattern.business.DynamicProxy;
-import com.martin.mysample.designpattern.business.RealProxySubject;
+import com.martin.mysample.pattern.structural.proxy.subject.Subject;
+import com.martin.mysample.pattern.structural.proxy.proxy.DynamicProxy;
+import com.martin.mysample.pattern.structural.proxy.subject.RealSubject;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -21,8 +21,8 @@ public class DynamicProxyTest {
 
     @Test
     public void testDynamicProxy() {
-        ProxySubject object = new RealProxySubject("动态代理");
-        ProxySubject proxy = (ProxySubject) Proxy.newProxyInstance(DesignPatternTest.class.getClassLoader(),
+        Subject object = new RealSubject("动态代理");
+        Subject proxy = (Subject) Proxy.newProxyInstance(DesignPatternTest.class.getClassLoader(),
                 object.getClass().getInterfaces(), new DynamicProxy(object));
         proxy.request();
     }

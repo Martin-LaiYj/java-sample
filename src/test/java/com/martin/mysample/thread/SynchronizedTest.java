@@ -1,7 +1,5 @@
 package com.martin.mysample.thread;
 
-import com.martin.mysample.demo.thread.Window;
-import com.martin.mysample.demo.thread.WindowBlock;
 import org.junit.jupiter.api.Test;
 
 class SynchronizedTest {

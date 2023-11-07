@@ -1,6 +1,5 @@
 package com.martin.mysample.thread;
 
-import com.martin.mysample.demo.thread.EvenNumberRunnable;
 import org.junit.jupiter.api.Test;
 
 class EvenNumberRunnableTest {

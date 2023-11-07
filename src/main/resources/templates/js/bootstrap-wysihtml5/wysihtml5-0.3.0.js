@@ -333,7 +333,7 @@ rangy.createModule("DomUtil", function(api, module) {
 
     // Perform feature tests
     if (!util.areHostMethods(document, ["createDocumentFragment", "createElement", "createTextNode"])) {
-        module.fail("document missing a Node creation method");
+        module.fail("document missing a Node creationalpattern method");
     }
 
     if (!util.isHostMethod(document, "getElementsByTagName")) {
@@ -1010,7 +1010,7 @@ rangy.createModule("DomUtil", function(api, module) {
     /*----------------------------------------------------------------------------------------------------------------*/
 
     /**
-     * Currently iterates through all nodes in the range on creation until I think of a decent way to do it
+     * Currently iterates through all nodes in the range on creationalpattern until I think of a decent way to do it
      * TODO: Look into making this a proper iterator, not requiring preloading everything first
      * @constructor
      */

@@ -1,7 +1,5 @@
 package com.martin.mysample.thread;
 
-import com.martin.mysample.demo.thread.HungrySingle;
-import com.martin.mysample.demo.thread.LazySingle;
 import org.junit.jupiter.api.Test;
 
 /**

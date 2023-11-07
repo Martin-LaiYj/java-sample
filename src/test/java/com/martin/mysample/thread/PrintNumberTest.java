@@ -1,6 +1,5 @@
 package com.martin.mysample.thread;
 
-import com.martin.mysample.demo.thread.PrintNumber;
 import org.junit.jupiter.api.Test;
 
 /**
