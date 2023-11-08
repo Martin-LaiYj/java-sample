@@ -3,7 +3,6 @@ package com.martin.mysample.design_pattern.creational_pattern.factory.factory;
 import com.martin.mysample.design_pattern.creational_pattern.factory.product.AbstractProductA;
 import com.martin.mysample.design_pattern.creational_pattern.factory.product.AbstractProductB;
 
-
 /**
  * AbstractFactory
  *
