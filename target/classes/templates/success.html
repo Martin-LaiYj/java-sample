@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <title>Good Thymes Virtual Grocery</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" media="all"
+        href="../../css/gtvg.css" th:href="@{/css/gtvg.css}" />
+</head>
+
+<body>
+
+<p th:text="${msg}">Hello World!</p>
+<h2>
+  <a href="www.baidu.com" th:href="${link}">Baidu</a>
+</h2>
+<h2>
+  <a th:href="${link}">test link</a>
+  <a th:href="@{link}">test link2</a>
+</h2>
+</body>
+
+</html>
