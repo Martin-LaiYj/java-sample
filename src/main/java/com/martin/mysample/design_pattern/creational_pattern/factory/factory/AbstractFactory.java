@@ -13,8 +13,8 @@ import com.martin.mysample.design_pattern.creational_pattern.factory.product.Abs
 
 public abstract class AbstractFactory {
 
-     public abstract AbstractProductA createProductA();
+    public abstract AbstractProductA createProductA();
 
-     public abstract AbstractProductB createProductB();
+    public abstract AbstractProductB createProductB();
 
 }
