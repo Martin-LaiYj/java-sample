@@ -1,6 +1,6 @@
 package com.martin.mysample.demo.config;
 
-import com.martin.mysample.demo.pojo.UserDTO;
+import com.martin.mysample.demo.model.UserDTO;
 import org.springframework.boot.autoconfigure.cache.CacheProperties;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;

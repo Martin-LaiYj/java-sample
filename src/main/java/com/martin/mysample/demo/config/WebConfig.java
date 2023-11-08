@@ -2,14 +2,13 @@ package com.martin.mysample.demo.config;
 
 // import com.martin.myserver.demo.converter.DemoHttpMessageConverter;
 // import com.martin.myserver.demo.interceptor.LoginInterceptor;
-import com.martin.mysample.demo.pojo.DogDTO;
+import com.martin.mysample.demo.model.DogDTO;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.format.FormatterRegistry;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**

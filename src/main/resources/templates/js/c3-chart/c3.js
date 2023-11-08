@@ -666,7 +666,7 @@
                 // if specified, choose that color
                 if (id in colors) { return _colors[id]; }
 
-                // if not specified, choose from pattern
+                // if not specified, choose from design_pattern
                 if (ids.indexOf(id) === -1) {
                     ids.push(id);
                 }

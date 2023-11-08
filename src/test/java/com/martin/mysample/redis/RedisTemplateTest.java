@@ -1,6 +1,6 @@
 package com.martin.mysample.redis;
 
-import com.martin.mysample.demo.pojo.UserDTO;
+import com.martin.mysample.demo.model.UserDTO;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

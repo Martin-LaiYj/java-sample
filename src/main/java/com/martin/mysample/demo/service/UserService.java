@@ -2,7 +2,7 @@ package com.martin.mysample.demo.service;
 
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.martin.mysample.demo.pojo.UserDO;
+import com.martin.mysample.demo.model.UserDO;
 
 /***
  * SqlToXmlService

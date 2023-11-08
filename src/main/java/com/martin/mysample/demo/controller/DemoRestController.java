@@ -1,6 +1,6 @@
 package com.martin.mysample.demo.controller;
 
-import com.martin.mysample.demo.pojo.UserDTO;
+import com.martin.mysample.demo.model.UserDTO;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;

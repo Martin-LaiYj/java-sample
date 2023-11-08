@@ -2,7 +2,7 @@ package com.martin.mysample.demo.mapper;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.martin.mysample.demo.pojo.UserDO;
+import com.martin.mysample.demo.model.UserDO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

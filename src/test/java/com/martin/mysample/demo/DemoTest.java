@@ -1,8 +1,8 @@
 package com.martin.mysample.demo;
 
-import com.martin.mysample.demo.pojo.Animal;
-import com.martin.mysample.demo.pojo.Dog;
-import com.martin.mysample.demo.pojo.PuppyDog;
+import com.martin.mysample.demo.model.Animal;
+import com.martin.mysample.demo.model.Dog;
+import com.martin.mysample.demo.model.PuppyDog;
 import com.martin.mysample.demo.service.impl.UserServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
